@@ -91,7 +91,7 @@ It uses plain HTML, CSS, and JavaScript. There is no framework and no build step
 - Removed unused files from A2 (`.idea/`, `.DS_Store`, old PNGs).
 - CSS variables handle dark mode without duplicated rules.
 
-**Lighthouse (desktop):** Performance __ · Accessibility __ · Best Practices __ · SEO __ <!-- TODO -->
+**Lighthouse (desktop):** Performance 100 · Accessibility 100· Best Practices 100 · SEO 100 
 
 ---
 
