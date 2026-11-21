@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bader Alghamdi — Software Engineering student at KFUPM. Projects and contact.">
+    <title>Bader | Developer Portfolio</title>
+
+    <script>
+        (function () {
+            var saved = null;
+            try {
+                saved = localStorage.getItem("theme");
+            } catch (e) {}
+
+            var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+            if (saved === "dark" || (!saved && prefersDark)) {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <nav class="nav-links" aria-label="Main">
+        <button class="tab-btn" data-target="about">About</button>
+        <button class="tab-btn" data-target="projects">Projects</button>
+        <button class="tab-btn" data-target="contact">Contact</button>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">🌙 Dark</button>
+</header>
+
+<main class="page-container">
+
+    <section id="about" class="tab-page">
+        <h1>Hi, Welcome to Bader's Portfolio</h1>
+        <p class="tagline">Aspiring Cloud Architect &amp; Software Developer</p>
+        <p class="bio">
+            I am an undergraduate Software Engineering student at KFUPM passionate about
+            Cloud Computing (AWS) and building modern, interactive applications.
+        </p>
+
+        <figure class="quote-box">
+            <blockquote id="quote-text" aria-live="polite">Loading today's quote…</blockquote>
+            <figcaption id="quote-author"></figcaption>
+            <button id="quote-retry" class="btn-link hidden" type="button">Try again</button>
+        </figure>
+
+        <div class="cta-row">
+            <button class="btn btn-primary" data-target="projects">View my Projects</button>
+            <button class="btn btn-outline" data-target="contact">Contact Me</button>
+        </div>
+    </section>
+
+    <section id="projects" class="tab-page">
+        <h1>Projects</h1>
+
+        <div class="controls">
+            <input type="search" id="project-search" class="search-input" placeholder="Search projects..." aria-label="Search projects">
+
+            <div class="filter-group" role="group" aria-label="Filter by category">
+                <button class="chip" data-category="all">All</button>
+                <button class="chip" data-category="web">Web</button>
+                <button class="chip" data-category="cloud">Cloud</button>
+                <button class="chip" data-category="game">Game</button>
+            </div>
+
+            <div class="select-row">
+                <label>
+                    Level
+                    <select id="level-select">
+                        <option value="all">All levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </label>
+
+                <label>
+                    Sort by
+                    <select id="sort-select">
+                        <option value="newest">Newest first</option>
+                        <option value="oldest">Oldest first</option>
+                        <option value="az">Name (A–Z)</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <p id="level-message" class="level-message"></p>
+        <p id="results-count" class="results-count" aria-live="polite"></p>
+
+        <div id="projects-grid" class="projects-grid"></div>
+
+        <p id="empty-state" class="empty-msg hidden">
+            No projects match these filters. Try another word or reset the filters.
+        </p>
+        <button id="reset-filters" class="btn-link hidden" type="button">Reset filters</button>
+    </section>
+
+    <section id="contact" class="tab-page">
+        <h1>Contact Me</h1>
+        <form id="contact-form" novalidate>
+
+            <div class="field">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" autocomplete="name" aria-describedby="name-error">
+                <p id="name-error" class="field-error"></p>
+            </div>
+
+            <div class="field">
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" autocomplete="email" aria-describedby="email-error">
+                <p id="email-error" class="field-error"></p>
+            </div>
+
+            <div class="field">
+                <label for="user-message">Message</label>
+                <textarea id="user-message" rows="5" maxlength="500" aria-describedby="message-error message-count"></textarea>
+                <div class="field-meta">
+                    <p id="message-error" class="field-error"></p>
+                    <span id="message-count" class="char-count">0 / 500</span>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Bader. All rights reserved.</p>
+    <p class="session-info">Time on this site: <span id="visit-timer">00:00</span></p>
+</footer>
+
+</body>
+</html>
