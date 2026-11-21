@@ -1,7 +1,7 @@
 # Technical Documentation – Assignment 3
 
 **Project:** Developer Portfolio (builds on Assignments 1 and 2)
-**Stack:** HTML5, CSS3, vanilla JavaScript (ES2020). No frameworks, no build step, no web fonts.
+**Stack:** HTML5, CSS3, vanilla JavaScript.
 
 
 ---
