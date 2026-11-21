@@ -76,7 +76,7 @@ It uses plain HTML, CSS, and JavaScript. There is no framework and no build step
 ├── assets/images/        # WebP images
 ├── docs/
 │   ├── ai-usage-report.md
-│   └── technical-documentation.md
+│   └── technical-documentation .md
 └── .gitignore
 ```
 
@@ -94,6 +94,13 @@ It uses plain HTML, CSS, and JavaScript. There is no framework and no build step
 **Lighthouse (desktop):** Performance 100 · Accessibility 100· Best Practices 100 · SEO 100 
 
 ---
+## AI Use
+
+I used **Claude** (Sonnet 5.5 and Opus 5.5) as a guide and reviewer
+
+- **Code:** I asked for step-by-step guidance and a skeleton with TODOs for `script.js`, then wrote the functions myself. I pasted each version back for review and fixed the bugs it found (saved-filter validation, timezone date bug, double tab switch, honest form message).
+- **Docs:** Claude helped structure and draft parts of the documentation, which I edited to match my real code and test results.
+- **Testing:** I tested everything myself in the browser and with Lighthouse.
 
 
 ## Author
