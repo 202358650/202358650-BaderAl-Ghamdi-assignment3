@@ -139,10 +139,8 @@ Uses `replaceChildren`, optional chaining, object spread and CSS custom properti
 
 | Browser | Result |
 |---|---|
-| Chrome (desktop) | [FILL] |
-| Safari (macOS) | [FILL] |
-| Firefox | [FILL] |
-| Mobile width (≤ 600px) | [FILL] |
+| Chrome (desktop) | 100|
+
 
 ## 8. Known Limitations
 
