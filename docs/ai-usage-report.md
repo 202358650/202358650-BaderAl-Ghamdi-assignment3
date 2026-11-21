@@ -15,7 +15,7 @@
 ## 2. Benefits & Challenges
 
 **Benefits:**
-I asked Claude to guide me instead of giving me code. For moving the cards into JavaScript, it gave me the steps and a skeleton with TODOs, and I wrote the code myself. Because of that, I actually understand how the data, the filters and the rendering fit together.
+I asked Claude to guide me instead of giving me code. For moving the cards into JavaScript, it gave me the steps and a skeleton with TODOs, and I wrote the code myself. 
 
 The reviews also caught bugs I missed: a wrong theme button label on load, the tab switch running twice, dates showing the wrong month in some timezones, and CSS still styling `h3` after I switched to `h2`. It also pointed out low contrast in dark mode, and that my form said "message sent" when nothing was sent. I changed that to a clear demo message.
 
