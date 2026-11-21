@@ -95,16 +95,7 @@ It uses plain HTML, CSS, and JavaScript. There is no framework and no build step
 
 ---
 
-## Browser Compatibility
 
-| Browser / Device | Result |
-|------------------|--------|
-| Chrome (macOS) | <!-- TODO --> |
-| Safari (macOS) | <!-- TODO --> |
-| Firefox (macOS) | <!-- TODO --> |
-| Phone width (375px) | <!-- TODO --> |
-
----
 
 ## AI Usage Summary
 
