@@ -96,13 +96,6 @@ It uses plain HTML, CSS, and JavaScript. There is no framework and no build step
 ---
 
 
-
-## AI Usage Summary
-
-I used **Claude (Claude Opus 5.5)** to generate the Assignment 3 features on top of my Assignment 2 code and to draft the documentation. I then reviewed, trimmed, and tested it myself. Details and my declaration are in [`docs/ai-usage-report.md`](docs/ai-usage-report.md).
-
----
-
 ## Author
 
 **Bader Alghamdi**, Student ID: 202358650
