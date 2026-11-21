@@ -3,7 +3,6 @@
 **Project:** Developer Portfolio (builds on Assignments 1 and 2)
 **Stack:** HTML5, CSS3, vanilla JavaScript (ES2020). No frameworks, no build step, no web fonts.
 
-> Items marked **[FILL]** are measurements or results you must take yourself. Delete this note before submitting.
 
 ---
 
