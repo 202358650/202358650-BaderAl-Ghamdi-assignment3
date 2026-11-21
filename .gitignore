@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+.vscode/
+
+*-ai-evidence.zip
+ai-evidence/
+conversations/
+artifacts/
